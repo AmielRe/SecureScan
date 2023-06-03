@@ -1,19 +1,17 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import LoginButton from "./components/LoginButton";
-import LogoutButton from "./components/LogoutButton";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <>
-      <nav className="navbar bg-dark">
-        <div className="container-fluid">
-          <span className="appName">React User Authentication</span>
-        </div>
-      </nav>
-      <LoginButton />
-      <LogoutButton />
-    </>
+    <Router>
+      <div className="flex-wrapper">
+        <Header></Header>
+        <Routes></Routes>
+        <Footer></Footer>
+      </div>
+    </Router>
   );
 }
 
