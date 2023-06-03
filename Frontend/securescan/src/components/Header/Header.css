@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel+Decorative");
+
+.navbar-brand {
+  font-family: "Cinzel Decorative", sans-serif;
+}
+
+.navbar-link {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  padding: 20px 0 20px;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 16px 0;
+  margin: 0 12px;
+  font-size: 1.2rem;
+}
+
+.underline-animation a {
+  transition: color 0.1s, background-color 0.1s;
+  color: #000;
+}
+.underline-animation a:hover {
+  color: #4dd0e1;
+}
+.underline-animation a:focus,
+.underline-animation a:active {
+  color: #00bcd4;
+}
+
+.underline-animation a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0; /* Changed from "top: 100%" */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #00bcd4;
+  transform-origin: center top;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
+}
+
+.underline-animation a:hover::before,
+.underline-animation a:focus::before {
+  transform-origin: center top;
+  transform: scaleX(1);
+}
