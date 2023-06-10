@@ -1,7 +1,7 @@
-package repository;
+package com.amiel.usermanagementservice.repository;
 
-import models.ERole;
-import models.Role;
+import com.amiel.usermanagementservice.models.ERole;
+import com.amiel.usermanagementservice.models.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
