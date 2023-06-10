@@ -1,4 +1,4 @@
-package models;
+package com.amiel.usermanagementservice.models;
 
 public enum ERole {
     ROLE_USER,
